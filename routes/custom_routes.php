@@ -18,22 +18,22 @@ Route::get('about-us', function() {
 	return view('aboutus');
 });
 
-Route::get('team', array('as' => 'team', function () {
+Route::get('/team', array('as' => 'team', function () {
     return View::make('aboutus');
 }));
 
-Route::get('news', function() {
+Route::get('/news', function() {
 	return view('news');
 });
 
-Route::get('news_item', function() {
+Route::get('/news_item', function() {
 	return view('news_item');
 });
 
-Route::get('contact', function() {
+Route::get('/contact', function() {
 	return view('contact');
 });
 
-Route::get('team', function() {
+Route::get('/team', function() {
 	return view('team');
 });

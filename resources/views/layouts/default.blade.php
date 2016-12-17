@@ -135,13 +135,13 @@
                             </li>
                         </ul>
                     </li>
-                        <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('team') }}">Team</a>
+                        <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('/team') }}">Team</a>
                         </li>
                     <!-- <li {!! (Request::is('blog') || Request::is('blogitem/*') ? 'class="active"' : '') !!}><a href="{{ URL::to('blog') }}"> Blog</a>
                     </li> -->
-                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('about-us') }}">Ubout Us</a>
+                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">Ubout Us</a>
                     </li>
-                    <li {!! (Request::is('contact') ? 'class="active"' : '') !!}><a href="{{ URL::to('contact') }}">Contact</a>
+                    <li {!! (Request::is('contact') ? 'class="active"' : '') !!}><a href="{{ URL::to('/contact') }}">Contact</a>
                     </li>
                     {{--based on anyone login or not display menu items--}}
                     @if(Sentinel::guest())

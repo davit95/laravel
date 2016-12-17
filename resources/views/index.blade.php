@@ -33,7 +33,7 @@ Home
 
 {{-- content --}}
 @section('content')
-    <div class="container">
+    <!-- <div class="container">
         <section class="purchas-main">
             <div class="container bg-border wow pulse" data-wow-duration="2.5s">
                 <div class="row">
@@ -43,9 +43,9 @@ Home
                 </div>
             </div>
         </section>
-        <!-- Service Section Start-->
+        
         <div class="row">
-            <!-- Responsive Section Start -->
+            
             <div class="text-center">
                 <h3 class="border-primary"><span class="heading_border bg-primary">Our Services</span></h3>
             </div>
@@ -62,10 +62,9 @@ Home
                     </div>
                 </div>
             </div>
-            <!-- //Responsive Section End -->
-            <!-- Easy to Use Section Start -->
+            
             <div class="col-sm-6 col-md-3 wow bounceInDown" data-wow-duration="3s" data-wow-delay="0.4s">
-                <!-- Box Start -->
+                
                 <div class="box">
                     <div class="box-icon box-icon1">
                         <i class="livicon icon1" data-name="gears" data-size="55" data-loop="true" data-c="#418bca" data-hc="#418bca"></i>
@@ -78,8 +77,7 @@ Home
                     </div>
                 </div>
             </div>
-            <!-- //Easy to Use Section End -->
-            <!-- Clean Design Section Start -->
+            
             <div class="col-sm-6 col-md-3 wow bounceInUp" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="box">
                     <div class="box-icon box-icon2">
@@ -93,8 +91,7 @@ Home
                     </div>
                 </div>
             </div>
-            <!-- //Clean Design Section End -->
-            <!-- 20+ Page Section Start -->
+            
             <div class="col-sm-6 col-md-3 wow bounceInRight" data-wow-duration="5s" data-wow-delay="1.2s">
                 <div class="box">
                     <div class="box-icon box-icon3">
@@ -108,12 +105,12 @@ Home
                     </div>
                 </div>
             </div>
-            <!-- //20+ Page Section End -->
+            
         </div>
-        <!-- //Services Section End -->
-    </div>
+        
+    </div> -->
     <!-- Layout Section Start -->
-    <section class="feature-main">
+    <!-- <section class="feature-main">
         <div class="container">
             <div class="row">
 
@@ -135,7 +132,7 @@ Home
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- //Layout Section Start -->
     <!-- Accordions Section End -->
     <div class="container">
@@ -292,7 +289,7 @@ Home
         <!-- //Accordions Section End -->
         <!-- Our Team Start -->
         <div class="row text-center">
-            <h3 class=" border-danger"><span class="heading_border bg-danger">Our Team</span></h3>
+            <h3 class=" border-danger"><a href="{{url('/team')}}"><span class="heading_border bg-danger">Our Team</span></a></h3>
             <div class="col-md-3 col-sm-5 profile wow fadeInLeft" data-wow-duration="3s">
                 <div class="thumbnail bg-white">
                     <img src="{{ asset('assets/images/img_3.jpg') }}" alt="team-image" class="img-responsive">
@@ -381,7 +378,7 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInLeft" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-warning"><span class="heading_border bg-warning">What We Are</span></h4>
+                        <h4 class="border-warning"><a href="{{url('/about-us')}}"><span class="heading_border bg-warning">What We Are</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_12.jpg') }}" alt="image_12" class="img-responsive">
@@ -397,7 +394,7 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInRight" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-success"><span class="heading_border bg-success">About Us</span></h4>
+                        <h4 class="border-success"><a href="{{url('/about-us')}}"><span class="heading_border bg-success">About Us</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_11.jpg') }}" alt="image_11" class="img-responsive">
@@ -413,8 +410,8 @@ Home
         </div>
         <!-- //What we are section End -->
         <!-- Testimonial Start -->
-        <div class="row">
-            <!-- Testimonial Section -->
+        <!-- <div class="row">
+            
             <div class="text-center">
                 <h3 class="border-primary"><span class="heading_border bg-primary">Testimonials</span></h3>
             </div>
@@ -457,11 +454,11 @@ Home
                     </p>
                 </div>
             </div>
-            <!-- Testimonial Section End -->
-        </div>
+            
+        </div> -->
         <!-- Testimonial End -->
         <!-- Features Start -->
-        <div class="row features">
+        <!-- <div class="row features">
             <div class="text-center">
                 <div class="text-center">
                     <h3 class=" border-warning"><span class="heading_border bg-warning">Features</span></h3>
@@ -522,16 +519,16 @@ Home
                     </p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- //Features End -->
         <!-- Our Skills Start -->
         
-        <div class="text-center marbtm10">
+        <!-- <div class="text-center marbtm10">
             <h3 class="border-danger"><span class="heading_border bg-danger">Our Skills</span></h3>
-        </div>
-            </div>
-        <div class="sliders">
-            <!-- Our skill Section start -->
+        </div> -->
+    </div>
+        <!-- <div class="sliders">
+            
             <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 text-center wow zoomIn" data-wow-duration="3.5s">
@@ -563,10 +560,10 @@ Home
             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
             </div>
         </div>
-            <!-- Our skills Section End -->
+            
         </div>
-        <!-- //Our Skills End -->
-    </div>
+        
+    </div> -->
     <!-- //Container End -->
 @stop
 
