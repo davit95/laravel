@@ -44,9 +44,9 @@ About us
 @section('content')
     <!-- Container Section Start -->
     <div class="container">
-        <!-- Slider Section Start -->
-        <div class="row">
-            <!-- Left Heading Section Start -->
+        
+        <!-- <div class="row">
+            
             <div class="col-md-7 col-sm-12 wow bounceInLeft" data-wow-duration="5s">
                 <h2><label>Welcome to Josh</label></h2>
                 <p>
@@ -59,8 +59,7 @@ About us
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem
                 </p>
             </div>
-            <!-- //Left Heaing Section End -->
-            <!-- Slider Start -->
+            
             <div class="col-md-5 col-sm-12 slider wow fadeInRightBig" data-wow-duration="5s">
                 <div id="owl-demo" class="owl-carousel owl-theme">
                     <div class="item"><img src="{{ asset('assets/images/image_16.jpg') }}" alt="slider-image">
@@ -71,17 +70,16 @@ About us
                     </div>
                 </div>
             </div>
-            <!-- //Slider End -->
-        </div>
-        <!-- //Slider Section End -->
-        <!-- Services Section Start -->
-        <div class="row">
+            
+        </div> -->
+        
+        <!-- <div class="row">
             <div class="text-center">
                 <h3 class="border-success"><span class="heading_border bg-success" >Services</span></h3>
             </div>
-            <!-- left Section Start -->
+            
             <div class="col-md-6 col-sm-12">
-                <!-- Responsive Section Start -->
+                
                 <div class="col-sm-6 col-md-6 wow zoomIn" data-wow-duration="3s">
                     <div class="box">
                         <div class="box-icon">
@@ -95,8 +93,7 @@ About us
                         </div>
                     </div>
                 </div>
-                <!-- //Responsive Section End -->
-                <!-- Easy to Use Section Start -->
+                
                 <div class="col-sm-6 col-md-6 wow zoomIn" data-wow-duration="3s">
                     <div class="box">
                         <div class="box-icon box-icon1">
@@ -110,14 +107,14 @@ About us
                         </div>
                     </div>
                 </div>
-                <!-- //Easy to use Section End -->
+                
             </div>
-            <!-- Left Section End -->
+            
             <div class="col-md-6 col-sm-12 wow bounceInRight" data-wow-duration="3s">
-                <!-- Pnael group section Start -->
+                
                 <div class="margin-t30 hidden-xs hidden-sm"></div>
                 <div class="panel-group" id="accordion">
-                    <!--Php Section Start -->
+                    
                     <div class="panel panel-default">
                         <div class="panel-heading text_bg">
                             <h4 class="panel-title">
@@ -141,8 +138,7 @@ About us
                             </div>
                         </div>
                     </div>
-                    <!-- //Php Section End -->
-                    <!-- Html Section Start -->
+                   
                     <div class="panel panel-default">
                         <div class="panel-heading text_bg">
                             <h4 class="panel-title">
@@ -165,8 +161,7 @@ About us
                             </div>
                         </div>
                     </div>
-                    <!-- //Html Section End -->
-                    <!-- Jquery Section Start -->
+                    
                     <div class="panel panel-default">
                         <div class="panel-heading text_bg">
                             <h4 class="panel-title">
@@ -189,11 +184,11 @@ About us
                             </div>
                         </div>
                     </div>
-                    <!-- //Jquery Section End -->
+                    
                 </div>
-                <!-- //Panel group Section End -->
+                
             </div>
-        </div>
+        </div> -->
         <!-- // Services Section End -->
         <!-- Our Team Section Start -->
         <div class="row">
@@ -203,7 +198,7 @@ About us
             </div>
             <!-- //Our Team Heading End -->
             <!-- Image1 Section Start -->
-            <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3.5s">
+            <div class="col-md-6 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3.5s">
                 <div class="thumbnail bg-white  text-center">
                     <img src="{{ asset('assets/images/img_3.jpg') }}" alt="team-image" class="img-responsive">
                     <div class="caption">
@@ -225,7 +220,7 @@ About us
             </div>
             <!-- //Image1 Section End -->
             <!-- Image2 Section Start -->
-            <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
+            <div class="col-md-6 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white text-center">
                     <img src="{{ asset('assets/images/img_5.jpg') }}" alt="team-image">
                     <div class="caption">
@@ -247,7 +242,7 @@ About us
             </div>
             <!-- //Image2 Section End -->
             <!-- Image3 Section Start -->
-            <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
+            <div class="col-md-6 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white  text-center">
                     <img src="{{ asset('assets/images/img_4.jpg') }}" alt="team-image" class="img-responsive">
                     <div class="caption">
@@ -269,7 +264,7 @@ About us
             </div>
             <!-- Image3 Section End -->
             <!-- Image4 Section Star -->
-            <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
+            <div class="col-md-6 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white text-center">
                     <img src="{{ asset('assets/images/img_6.jpg') }}" alt="team-image">
                     <div class="caption">

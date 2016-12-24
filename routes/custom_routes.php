@@ -37,3 +37,28 @@ Route::get('/contact', function() {
 Route::get('/team', function() {
 	return view('team');
 });
+
+Route::group(['prefix' => 'admin', 'middleware' => 'SentinelAdmin', 'as' => 'admin.'], function () {
+    # Dashboard / Index
+    Route::get('/', array('as' => 'dashboard','uses' => 'JoshController@showHome'));
+
+    // GUI Crud Generator
+    Route::get('generator_builder', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@builder');
+    Route::get('field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@fieldTemplate');
+    Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generate');
+
+    # book Management
+    Route::group(array('prefix' => 'books'), function () {
+        Route::get('/', array('as' => 'books', 'uses' => 'BooksController@index'));
+        Route::get('data',['as' => 'books.data', 'uses' =>'BooksController@data']);
+        Route::get('create', 'BooksController@create');
+        Route::post('create', 'BooksController@store');
+        Route::get('{book}/delete', array('as' => 'books.delete', 'uses' => 'BooksController@destroy'));
+        Route::get('{book}/confirm-delete', array('as' => 'books.confirm-delete', 'uses' => 'BooksController@getModalDelete'));
+        Route::get('{book}/restore', array('as' => 'restore/book', 'uses' => 'BooksController@getRestore'));
+        Route::get('{book}', array('as' => 'books.show', 'uses' => 'BooksController@show'));
+        Route::post('{book}/passwordreset', array('as' => 'passwordreset', 'uses' => 'BooksController@passwordreset'));
+    });
+    Route::resource('books', 'BooksController');
+
+});

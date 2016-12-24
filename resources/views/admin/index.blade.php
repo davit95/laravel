@@ -22,7 +22,6 @@
 
 {{-- Page content --}}
 @section('content')
-
     <section class="content-header">
         <h1>Welcome to Dashboard</h1>
         <ol class="breadcrumb">

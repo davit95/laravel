@@ -43,7 +43,7 @@ News
     <!-- Container Section Start -->
     <div class="container">
         <div class="row news">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <!-- News1 Section Start -->
                 <div class="blog thumbnail wow slideInLeft" data-wow-duration="3.5s">
                     <label>
@@ -99,12 +99,12 @@ News
                 </div>
                 <!-- //News3 Section End -->
             </div>
-            <div class="col-md-4 ">
-                <!-- Tabbable-Panel Start -->
+            <!-- <div class="col-md-4 ">
+                
                 <div class="tabbable-panel wow slideInDown" data-wow-duration="3.5s">
-                    <!-- Tabbablw-line Start -->
+                    
                     <div class="tabbable-line">
-                        <!-- Nav Nav-tabs Start -->
+                        
                         <ul class="nav nav-tabs ">
                             <li class="active">
                                 <a href="#tab_default_1" data-toggle="tab">
@@ -115,8 +115,7 @@ News
                                 Recent </a>
                             </li>
                         </ul>
-                        <!-- //Nav Nav-tabs End -->
-                        <!-- Tab-content Start -->
+                        
                         <div class="tab-content">
                             <div class="tab-pane active" id="tab_default_1">
                                 <div class="media">
@@ -229,7 +228,7 @@ News
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Tab-content End -->
         </div>
         <!-- //Tabbablw-line End -->

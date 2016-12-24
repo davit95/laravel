@@ -28,7 +28,7 @@ class FrontEndController extends JoshController
      * $user_activation set to false makes the user activation via user registered email
      * and set to true makes user activated while creation
      */
-    private $user_activation = true;
+    private $user_activation = false;
 
     /**
      * Account sign in.
@@ -190,7 +190,7 @@ class FrontEndController extends JoshController
     public function postRegister(UserRequest $request)
     {
         $activate = $this->user_activation; //make it false if you don't want to activate user automatically it is declared above as global variable
-
+        //dd($activate);
         try {
             // Register the user
             $user = Sentinel::register($request->only(['first_name', 'last_name', 'email', 'password', 'gender']), $activate);
@@ -206,7 +206,6 @@ class FrontEndController extends JoshController
                     'user' => $user,
                     'activationUrl' => URL::route('activate', [$user->id, Activation::create($user)->code]),
                 );
-
                 // Send the activation code through email
                 Mail::send('emails.register-activate', $data, function ($m) use ($user) {
                     $m->to($user->email, $user->first_name . ' ' . $user->last_name);
@@ -382,7 +381,7 @@ class FrontEndController extends JoshController
         // Send the activation code through email
         Mail::send('emails.contact', compact('data'), function ($m) use ($data) {
             $m->from($data['contact-email'], $data['contact-name']);
-            $m->to('email@domain.com', @trans('general.site_name'));
+            $m->to('davstepanyan@mail.ru', @trans('general.site_name'));
             $m->subject('Received a mail from ' . $data['contact-name']);
 
         });

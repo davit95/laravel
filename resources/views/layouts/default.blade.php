@@ -129,7 +129,7 @@
                     </li> -->
                     <li class="dropdown {!! (Request::is('news') || Request::is('news_item') ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> News</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ URL::to('news') }}">News</a>
+                            <li><a href="{{ URL::to('news') }}">News <!-- Nos Actualités --></a>
                             </li>
                             <li><a href="{{ URL::to('news_item') }}">News Item</a>
                             </li>
@@ -139,13 +139,13 @@
                         </li>
                     <!-- <li {!! (Request::is('blog') || Request::is('blogitem/*') ? 'class="active"' : '') !!}><a href="{{ URL::to('blog') }}"> Blog</a>
                     </li> -->
-                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">Ubout Us</a>
+                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">Ubout Us <!-- À propos de Palocoran --></a>
                     </li>
                     <li {!! (Request::is('contact') ? 'class="active"' : '') !!}><a href="{{ URL::to('/contact') }}">Contact</a>
                     </li>
                     {{--based on anyone login or not display menu items--}}
                     @if(Sentinel::guest())
-                        <li><a href="{{ URL::to('login') }}">Login</a>
+                        <li><a href="{{ URL::to('login') }}">Login <!-- Compte --></a>
                         </li>
                         <li><a href="{{ URL::to('register') }}">Register</a>
                         </li>
@@ -296,6 +296,7 @@
     <!--global js starts-->
     <script type="text/javascript" src="{{ asset('assets/js/frontend/lib.js') }}"></script>
     <script src="{{asset('assets/js/frontend/style-switcher.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/custom/js/custom.js')}}" type="text/javascript"></script>
     <!--global js end-->
     <!-- begin page level js -->
     @yield('footer_scripts')

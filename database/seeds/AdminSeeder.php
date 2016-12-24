@@ -22,12 +22,20 @@ class AdminSeeder extends DatabaseSeeder {
 			'permissions' => array('admin' => 1),
 		]);
 
+		$superAdminRole = Sentinel::getRoleRepository()->createModel()->create([
+			'name' => 'Super Admin',
+			'slug' => 'super_admin',
+			'permissions' => array('super_admin' => 1),
+		]);
+
 		Sentinel::getRoleRepository()->createModel()->create([
 			'name'  => 'User',
 			'slug'  => 'user',
 		]);
 
 		$admin->roles()->attach($adminRole);
+		
+		$admin->roles()->attach($superAdminRole);
 
 		$this->command->info('Admin User created with username admin@admin.com and password admin');
 	}

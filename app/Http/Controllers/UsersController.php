@@ -28,7 +28,6 @@ class UsersController extends JoshController
     {
         // Grab all the users
         //$users = User::All();
-
         // Show the page
         return view('admin.users.index', compact('users'));
     }

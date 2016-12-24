@@ -26,7 +26,6 @@
             <h3 class="text-primary">Log In</h3>
                 <!-- Notifications -->
                 @include('notifications')
-
                 <form action="{{ route('login') }}" class="omb_loginForm"  autocomplete="off" method="POST">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group {{ $errors->first('email', 'has-error') }}">

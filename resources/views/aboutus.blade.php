@@ -196,13 +196,12 @@ About us
         </div>
         <!-- // Services Section End -->
         <!-- Our Team Section Start -->
-        <div class="row">
-            <!-- Our Team Heading Start -->
+        <!-- <div class="row">
+            
             <div class="text-center">
                 <h3 class="border-danger"><span class="heading_border bg-danger" >Our Team</span></h3>
             </div>
-            <!-- //Our Team Heading End -->
-            <!-- Image1 Section Start -->
+            
             <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3.5s">
                 <div class="thumbnail bg-white  text-center">
                     <img src="{{ asset('assets/images/img_3.jpg') }}" alt="team-image" class="img-responsive">
@@ -222,9 +221,7 @@ About us
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- //Image1 Section End -->
-            <!-- Image2 Section Start -->
+            
             <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white text-center">
                     <img src="{{ asset('assets/images/img_5.jpg') }}" alt="team-image">
@@ -245,8 +242,7 @@ About us
                     </div>
                 </div>
             </div>
-            <!-- //Image2 Section End -->
-            <!-- Image3 Section Start -->
+            
             <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white  text-center">
                     <img src="{{ asset('assets/images/img_4.jpg') }}" alt="team-image" class="img-responsive">
@@ -267,8 +263,7 @@ About us
                     </div>
                 </div>
             </div>
-            <!-- Image3 Section End -->
-            <!-- Image4 Section Star -->
+            
             <div class="col-md-3 col-sm-5 col-xs-10 profile wow zoomIn" data-wow-duration="3s" data-wow-delay="0.8s">
                 <div class="thumbnail bg-white text-center">
                     <img src="{{ asset('assets/images/img_6.jpg') }}" alt="team-image">
@@ -289,8 +284,8 @@ About us
                     </div>
                 </div>
             </div>
-            <!-- //Image4 Section End -->
-        </div>
+            
+        </div> -->
         <!-- //Our Team Section End -->
     </div>
     
