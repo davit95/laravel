@@ -64,7 +64,20 @@ class BooksController extends Controller
      */
     public function show($id)
     {
+    	try {
+    	    // Get the user information
+    	    $book = Book::find($id);
 
+    	} catch (BookNotFoundException $e) {
+    	    // Prepare the error message
+    	    $error = Lang::get('books/message.book_not_found', compact('id'));
+
+    	    // Redirect to the user management page
+    	    return Redirect::route('admin.books.index')->with('error', $error);
+    	}
+
+    	// Show the page
+    	return view('admin.books.show', compact('book'));
     }
 
     /**
