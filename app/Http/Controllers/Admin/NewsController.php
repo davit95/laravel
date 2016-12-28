@@ -35,7 +35,7 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return redirect()->back()->withWarning('This section in development.Please try later');
     }
 
     /**

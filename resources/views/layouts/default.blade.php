@@ -5,13 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- fb -->
-    <meta property="og:url"           content="http://book.dev/" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="book" />
-    <meta property="og:description"   content="book" />
-    <meta property="og:image"         content="http://book.dev/assets/images/custom/slide_1.jpg" />
-    <!-- fb end -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,14 +26,7 @@
 
 <body>
     <!-- fb -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1575355352754473";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>    
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5863ec30e8bbbf85"></script>
     <!-- end fb -->
     <!-- Header Start -->
     <header>

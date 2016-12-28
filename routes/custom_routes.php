@@ -66,7 +66,18 @@ Route::group(['prefix' => 'admin', 'middleware' => 'SentinelAdmin', 'as' => 'adm
     // Route::get('test', function() {
     //     return view('')
     // })
-
+    Route::group(array('prefix' => 'news'), function () {
+        Route::get('/', array('as' => 'news', 'uses' => 'Admin\NewsController@index'));
+        Route::get('create', array('as' => 'news.create', 'uses' => 'Admin\NewsController@create'));
+        Route::post('create', 'Admin\NewsController@store');
+        // Route::get('{blog}/edit', array('as' => 'blog.edit', 'uses' => 'BlogController@edit'));
+        // Route::post('{blog}/edit', 'BlogController@update');
+        // Route::get('{blog}/delete', array('as' => 'blog.delete', 'uses' => 'BlogController@destroy'));
+        // Route::get('{blog}/confirm-delete', array('as' => 'blog.confirm-delete', 'uses' => 'BlogController@getModalDelete'));
+        // Route::get('{blog}/restore', array('as' => 'blog.restore', 'uses' => 'BlogController@restore'));
+        // Route::get('{blog}/show', array('as' => 'blog.show', 'uses' => 'BlogController@show'));
+        // Route::post('{blog}/storecomment', 'BlogController@storeComment');
+    });
     Route::resource('news', 'Admin\NewsController');
 
 });

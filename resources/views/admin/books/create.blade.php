@@ -394,7 +394,7 @@
                                                           placeholder="Variable" class="form-control required"
                                                           value="{!! old('variable') !!}"/>
                                                    <br>
-                                                   <a  class="btn btn-info show_variable_sub_inputs" style="color: #fff !important;"><span class="glyphicon glyphicon-plus"></span> Add Fields Variable</a>
+                                                   <a  class="btn btn-info show_variable_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields Variable</a>
                                                    {!! $errors->first('variable', '<span class="help-block">:message</span>') !!}
                                                </div>
                                                <div class="col-sm-2">
@@ -707,7 +707,7 @@
                                                            placeholder="Menu déroulant 8 entrées + Autre" class="form-control required"
                                                            value="{!! old('menu_déroulant_8_entrées') !!}"/>
                                                     <br>
-                                                    <a  class="btn btn-info show_menu_déroulant_8_entrées_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Menu déroulant 8 entrées</a>
+                                                    <a  class="btn btn-info show_menu_déroulant_8_entrées_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Menu déroulant 8 entrées</a>
                                                     {!! $errors->first('menu_déroulant_8_entrées', '<span class="help-block">:message</span>') !!}
                                                 </div>
                                                 <div class="col-sm-2">
@@ -730,7 +730,7 @@
                                                                placeholder="Entrée 1" class="form-control required"
                                                                value="{!! old('entrée_1') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_1_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 1</a>
+                                                        <a  class="btn btn-info show_entrée_1_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 1</a>
                                                         {!! $errors->first('entrée_1', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -771,7 +771,7 @@
                                                                placeholder="Entrée 2" class="form-control required"
                                                                value="{!! old('entrée_2') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_2_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 2</a>
+                                                        <a  class="btn btn-info show_entrée_2_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 2</a>
                                                         {!! $errors->first('entrée_2', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -812,7 +812,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_3') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_3_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 3</a>
+                                                        <a  class="btn btn-info show_entrée_3_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 3</a>
                                                         {!! $errors->first('entrée_3', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -853,7 +853,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_4') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_4_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 4</a>
+                                                        <a  class="btn btn-info show_entrée_4_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 4</a>
                                                         {!! $errors->first('entrée_4', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -894,7 +894,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_5') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_5_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 5</a>
+                                                        <a  class="btn btn-info show_entrée_5_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 5</a>
                                                         {!! $errors->first('entrée_5', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -935,7 +935,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_6') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_6_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 6</a>
+                                                        <a  class="btn btn-info show_entrée_6_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 6</a>
                                                         {!! $errors->first('entrée_6', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -976,7 +976,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_7') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_7_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 7</a>
+                                                        <a  class="btn btn-info show_entrée_7_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 7</a>
                                                         {!! $errors->first('entrée_7', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -1017,7 +1017,7 @@
                                                                placeholder="Entrée 3" class="form-control required"
                                                                value="{!! old('entrée_8') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_entrée_8_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 8</a>
+                                                        <a  class="btn btn-info show_entrée_8_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Entrée 8</a>
                                                         {!! $errors->first('entrée_8', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -1115,7 +1115,7 @@
                                                                placeholder="Main{{$i}}" class="form-control required"
                                                                value="{!! old('main_{{$i}}') !!}"/>
                                                         <br>
-                                                        <a  class="btn btn-info show_description_main_{{$i}}_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields For Main {{$i}}</a>
+                                                        <a  class="btn btn-info show_description_main_{{$i}}_sub_inputs" style="color:#344dc9 !important"><span class="glyphicon glyphicon-plus"></span> Add Fields For Main {{$i}}</a>
                                                         {!! $errors->first('main_{{$i}}', '<span class="help-block">:message</span>') !!}
                                                     </div>
                                                     <div class="col-sm-2">
@@ -1195,7 +1195,7 @@
                                                                    placeholder="Lettres caractéristiques" class="form-control required"
                                                                    value="{!! old('lettres_caractéristiques') !!}"/>
                                                             <br>
-                                                            <a  class="btn btn-info show_lettres_caractéristiques_{{$i}}_sub_inputs"><span class="glyphicon glyphicon-plus"></span> Add Fields Lettres caractéristiques</a>
+                                                            <a  class="btn btn-info show_lettres_caractéristiques_{{$i}}_sub_inputs" style="color:#071f8f !important"><span class="glyphicon glyphicon-plus"></span> Add Fields Lettres caractéristiques</a>
                                                             {!! $errors->first('lettres_caractéristiques', '<span class="help-block">:message</span>') !!}
                                                         </div>
                                                         <div class="col-sm-2">
@@ -1217,7 +1217,7 @@
                                                                        placeholder="description{{$j}}" class="form-control required"
                                                                        value="{!! old('description_{{$j}}') !!}"/>
                                                                 <br>
-                                                                <a  class="btn btn-info show_description_sub_inputs" id = "{{$i}}_show_description_sub_inputs_{{$j}}"><span class="glyphicon glyphicon-plus"></span> Add Fields Lettres description{{$j}}</a>
+                                                                <a  class="btn btn-info show_description_sub_inputs" id = "{{$i}}_show_description_sub_inputs_{{$j}}" style="color:#08103b !important"><span class="glyphicon glyphicon-plus"></span> Add Fields Lettres description{{$j}}</a>
                                                                 {!! $errors->first('description_{{$j}}', '<span class="help-block">:message</span>') !!}
                                                             </div>
                                                             <div class="col-sm-2">
