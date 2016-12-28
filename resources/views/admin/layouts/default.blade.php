@@ -18,6 +18,7 @@
     <!-- global css -->
 
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('assets/css/custom/admin/custom.css') }}" rel="stylesheet" type="text/css"/>
     <!-- font Awesome -->
 
     <!-- end of global css -->
@@ -163,6 +164,7 @@
 </a>
 <!-- global js -->
 <script src="{{ asset('assets/js/app.js') }}" type="text/javascript"></script>
+<script src="{{ asset('assets/custom/js/admin/custom.js') }}" type="text/javascript"></script>
 
 
 <!-- end of global js -->

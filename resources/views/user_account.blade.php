@@ -68,7 +68,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group {{ $errors->first('first_name', 'has-error') }}">
+                            <!-- <div class="form-group {{ $errors->first('first_name', 'has-error') }}">
                                 <label class="col-lg-2 control-label">
                                     First Name:
                                     <span class='require'>*</span>
@@ -101,7 +101,7 @@
                                                value="{!! old('last_name',$user->last_name) !!}"></div>
                                     <span class="help-block">{{ $errors->first('last_name', ':message') }}</span>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group {{ $errors->first('email', 'has-error') }}">
                                 <label class="col-lg-2 control-label">

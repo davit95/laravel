@@ -291,7 +291,7 @@ class JoshController extends Controller {
     public function showHome()
     {
     	if(Sentinel::check())
-			return view('admin.index');
+			return view('admin.books.index');
 		else
 			return Redirect::to('admin/signin')->with('error', 'You must be logged in!');
     }

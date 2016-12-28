@@ -114,7 +114,8 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tab2" disabled="disabled">
-                                        <h2 class="hidden">&nbsp;</h2> <div class="form-group  {{ $errors->first('dob', 'has-error') }}">
+                                        <h2 class="hidden">&nbsp;</h2> 
+                                        <div class="form-group  {{ $errors->first('dob', 'has-error') }}">
                                             <label for="dob" class="col-sm-2 control-label">Date of Birth *</label>
                                             <div class="col-sm-10">
                                                 <input id="dob" name="dob" type="text" class="form-control"
@@ -134,11 +135,11 @@
                                                     </div>
                                                     <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 200px;"></div>
                                                     <div>
-                                <span class="btn btn-default btn-file">
-                                    <span class="fileinput-new">Select image</span>
-                                    <span class="fileinput-exists">Change</span>
-                                    <input id="pic" name="pic_file" type="file" class="form-control"/>
-                                </span>
+                                                        <span class="btn btn-default btn-file">
+                                                            <span class="fileinput-new">Select image</span>
+                                                            <span class="fileinput-exists">Change</span>
+                                                            <input id="pic" name="pic_file" type="file" class="form-control"/>
+                                                        </span>
                                                         <a href="#" class="btn btn-danger fileinput-exists"
                                                            data-dismiss="fileinput">Remove</a>
                                                     </div>

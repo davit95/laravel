@@ -19,12 +19,14 @@ Route::get('about-us', function() {
 });
 
 Route::get('/team', array('as' => 'team', function () {
-    return View::make('aboutus');
+    return View::make('team');
 }));
 
-Route::get('/news', function() {
-	return view('news');
-});
+Route::get('/partners', array('as' => 'partners', function () {
+    return View::make('partners');
+}));
+
+
 
 Route::get('/news_item', function() {
 	return view('news_item');
@@ -49,16 +51,22 @@ Route::group(['prefix' => 'admin', 'middleware' => 'SentinelAdmin', 'as' => 'adm
 
     # book Management
     Route::group(array('prefix' => 'books'), function () {
-        Route::get('/', array('as' => 'books', 'uses' => 'BooksController@index'));
-        Route::get('data',['as' => 'books.data', 'uses' =>'BooksController@data']);
-        Route::get('create', 'BooksController@create');
-        Route::post('create', 'BooksController@store');
-        Route::get('{book}/delete', array('as' => 'books.delete', 'uses' => 'BooksController@destroy'));
-        Route::get('{book}/confirm-delete', array('as' => 'books.confirm-delete', 'uses' => 'BooksController@getModalDelete'));
-        Route::get('{book}/restore', array('as' => 'restore/book', 'uses' => 'BooksController@getRestore'));
-        Route::get('{book}', array('as' => 'books.show', 'uses' => 'BooksController@show'));
-        Route::post('{book}/passwordreset', array('as' => 'passwordreset', 'uses' => 'BooksController@passwordreset'));
+        Route::get('/', array('as' => 'books', 'uses' => 'Admin\BooksController@index'));
+        Route::get('data',['as' => 'books.data', 'uses' =>'Admin\BooksController@data']);
+        Route::get('create', 'Admin\BooksController@create');
+        Route::post('create', 'Admin\BooksController@store');
+        Route::get('{book}/delete', array('as' => 'books.delete', 'uses' => 'Admin\BooksController@destroy'));
+        Route::get('{book}/confirm-delete', array('as' => 'books.confirm-delete', 'uses' => 'Admin\BooksController@getModalDelete'));
+        Route::get('{book}/restore', array('as' => 'restore/book', 'uses' => 'Admin\BooksController@getRestore'));
+        Route::get('{book}', array('as' => 'books.show', 'uses' => 'Admin\BooksController@show'));
+        Route::post('{book}/passwordreset', array('as' => 'passwordreset', 'uses' => 'Admin\BooksController@passwordreset'));
     });
-    Route::resource('books', 'BooksController');
+    Route::resource('books', 'Admin\BooksController');
+
+    // Route::get('test', function() {
+    //     return view('')
+    // })
+
+    Route::resource('news', 'Admin\NewsController');
 
 });

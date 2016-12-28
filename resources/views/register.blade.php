@@ -42,7 +42,7 @@
                     {!! $errors->first('last_name', '<span class="help-block">:message</span>') !!}
                 </div>
                 <div class="form-group {{ $errors->first('email', 'has-error') }}">
-                    <label class="sr-only"> Email</label>
+                    <label class="sr-only"> z</label>
                     <input type="email" class="form-control" id="Email" name="email" placeholder="Email"
                            value="{!! old('Email') !!}" >
                     {!! $errors->first('email', '<span class="help-block">:message</span>') !!}

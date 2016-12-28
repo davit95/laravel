@@ -5,6 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fb -->
+    <meta property="og:url"           content="http://book.dev/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="book" />
+    <meta property="og:description"   content="book" />
+    <meta property="og:image"         content="http://book.dev/assets/images/custom/slide_1.jpg" />
+    <!-- fb end -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,6 +32,16 @@
 </head>
 
 <body>
+    <!-- fb -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1575355352754473";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>    
+    <!-- end fb -->
     <!-- Header Start -->
     <header>
         <!-- Icon Section Start -->
@@ -55,7 +72,7 @@
                         <ul class="list-inline icon-position">
                             <li>
                                 <a href="mailto:"><i class="livicon" data-name="mail" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
-                                <label class="hidden-xs"><a href="mailto:" class="text-white">info@joshadmin.com</a></label>
+                                <!-- <label class="hidden-xs"><a href="mailto:" class="text-white">info@joshadmin.com</a></label> -->
                             </li>
                             <!-- <li>
                                 <a href="tel:"><i class="livicon" data-name="phone" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
@@ -91,7 +108,7 @@
                             </li>
                         </ul>
                     </li> -->
-                    <!-- <li class="dropdown {!! (Request::is('aboutus') || Request::is('timeline') || Request::is('faq') || Request::is('blank_page')  ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pages</a>
+                    <li class="dropdown {!! (Request::is('aboutus') || Request::is('timeline') || Request::is('faq') || Request::is('blank_page')  ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pages</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ URL::to('aboutus') }}">About Us</a>
                             </li>
@@ -107,7 +124,7 @@
                             <li><a href="{{ URL::to('blank_page') }}">Blank</a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
                     <!-- <li class="dropdown {!! (Request::is('products') || Request::is('single_product') || Request::is('compareproducts') || Request::is('category')  ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Shop</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ URL::to('products') }}">Products</a>
@@ -135,11 +152,13 @@
                             </li>
                         </ul>
                     </li>
-                        <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('/team') }}">Team</a>
-                        </li>
+                    <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('/team') }}">Team</a>
+                    </li>
+                    <li {!! (Request::is('partners') ? 'class="active"' : '') !!}><a href="{{ URL::to('/partners') }}">Partners</a>
+                    </li>
                     <!-- <li {!! (Request::is('blog') || Request::is('blogitem/*') ? 'class="active"' : '') !!}><a href="{{ URL::to('blog') }}"> Blog</a>
                     </li> -->
-                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">Ubout Us <!-- À propos de Palocoran --></a>
+                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">About Us <!-- À propos de Palocoran --></a>
                     </li>
                     <li {!! (Request::is('contact') ? 'class="active"' : '') !!}><a href="{{ URL::to('/contact') }}">Contact</a>
                     </li>
@@ -295,7 +314,7 @@
     </a>
     <!--global js starts-->
     <script type="text/javascript" src="{{ asset('assets/js/frontend/lib.js') }}"></script>
-    <script src="{{asset('assets/js/frontend/style-switcher.js')}}" type="text/javascript"></script>
+    <!-- <script src="{{asset('assets/js/frontend/style-switcher.js')}}" type="text/javascript"></script> -->
     <script src="{{asset('assets/custom/js/custom.js')}}" type="text/javascript"></script>
     <!--global js end-->
     <!-- begin page level js -->

@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Requests\BookRequest;
 use App\Models\Book;
 use Carbon\Carbon;
+use App\Http\Controllers\Controller;
 use Cartalyst\Sentinel\Laravel\Facades\Activation;
 use File;
 use Hash;
@@ -119,5 +120,16 @@ class BooksController extends Controller
         // }
         // $confirm_route = route('admin.users.delete', ['id' => $user->id]);
         // return view('admin.layouts.modal_confirmation', compact('error', 'model', 'confirm_route'));
+    }
+
+    /**
+     * Create new book
+     *
+     * @return View
+     */
+    public function create()
+    {
+        // Show the page
+        return view('admin.books.create');
     }
 }

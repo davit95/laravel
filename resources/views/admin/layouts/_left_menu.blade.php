@@ -1,12 +1,12 @@
 <ul id="menu" class="page-sidebar-menu">
-    <li {!! (Request::is('admin') ? 'class="active"' : '') !!}>
+    <!-- <li {!! (Request::is('admin') ? 'class="active"' : '') !!}>
         <a href="{{ route('admin.dashboard') }}">
             <i class="livicon" data-name="home" data-size="18" data-c="#418BCA" data-hc="#418BCA"
                data-loop="true"></i>
             <span class="title">Dashboard</span>
         </a>
-    </li>
-    <!-- <li {!! (Request::is('admin/datatables') || Request::is('admin/editable_datatables') || Request::is('admin/dropzone') || Request::is('admin/multiple_upload') || Request::is('admin/custom_datatables')? 'class="active"' : '') !!}>
+    </li> -->
+    <li {!! (Request::is('admin/datatables') || Request::is('admin/editable_datatables') || Request::is('admin/dropzone') || Request::is('admin/multiple_upload') || Request::is('admin/custom_datatables')? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="medal" data-size="18" data-c="#6CC66C" data-hc="#6CC66C"
                data-loop="true"></i>
@@ -45,8 +45,8 @@
                 </a>
             </li>
         </ul>
-    </li> -->
-    <!-- <li {!! (Request::is('admin/generator_builder') ? 'class="active"' : '') !!}>
+    </li> 
+    <li {!! (Request::is('admin/generator_builder') ? 'class="active"' : '') !!}>
         <a href="{{  URL::to('admin/generator_builder') }}">
             <i class="livicon" data-name="shield" data-size="18" data-c="#F89A14" data-hc="#F89A14"
                data-loop="true"></i>
@@ -86,8 +86,8 @@
                 </a>
             </li>
         </ul>
-    </li> -->
-    <!-- <li {!! (Request::is('admin/form_examples') || Request::is('admin/editor') || Request::is('admin/editor2')
+    </li>
+    <li {!! (Request::is('admin/form_examples') || Request::is('admin/editor') || Request::is('admin/editor2')
     || Request::is('admin/form_layout') || Request::is('admin/validation') || Request::is('admin/formelements') || Request::is('admin/dropdowns')
     || Request::is('admin/radio_checkbox') || Request::is('admin/ratings') || Request::is('admin/form_layouts') || Request::is('admin/formwizard')
     || Request::is('admin/accordionformwizard') || Request::is('admin/datepicker') | Request::is('admin/advanced_datepickers')? 'class="active"' : '') !!}>
@@ -434,8 +434,8 @@
                 </a>
             </li>
         </ul>
-    </li> -->
-   <!--  <li {!! (Request::is('admin/calendar') ? 'class="active"' : '') !!}>
+    </li>
+    <li {!! (Request::is('admin/calendar') ? 'class="active"' : '') !!}>
         <a href="{{ URL::to('admin/calendar') }}">
             <i class="livicon" data-c="#F89A14" data-hc="#F89A14" data-name="calendar" data-size="18"
                data-loop="true"></i>
@@ -470,8 +470,8 @@
                 </a>
             </li>
         </ul>
-    </li> -->
-    <!-- <li {!! (Request::is('admin/tasks') ? 'class="active"' : '') !!}>
+    </li>
+    <li {!! (Request::is('admin/tasks') ? 'class="active"' : '') !!}>
         <a href="{{ URL::to('admin/tasks') }}">
             <i class="livicon" data-c="#EF6F6C" data-hc="#EF6F6C" data-name="list-ul" data-size="18"
                data-loop="true"></i>
@@ -512,7 +512,7 @@
                 </a>
             </li>
         </ul>
-    </li> -->
+    </li>
     <li {!! (Request::is('admin/users') || Request::is('admin/users/create') || Request::is('admin/user_profile') || Request::is('admin/users/*') || Request::is('admin/deleted_users') ? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="user" data-size="18" data-c="#6CC66C" data-hc="#6CC66C"
@@ -569,7 +569,7 @@
             </li>
         </ul>
     </li>
-    <!-- <li {!! (Request::is('admin/googlemaps') || Request::is('admin/vectormaps') || Request::is('admin/advancedmaps') ? 'class="active"' : '') !!}>
+    <li {!! (Request::is('admin/googlemaps') || Request::is('admin/vectormaps') || Request::is('admin/advancedmaps') ? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="map" data-c="#67C5DF" data-hc="#67C5DF" data-size="18"
                data-loop="true"></i>
@@ -596,8 +596,8 @@
                 </a>
             </li>
         </ul>
-    </li> -->
-   <!--  <li {!! ((Request::is('admin/blogcategory') || Request::is('admin/blogcategory/create') || Request::is('admin/blog') ||  Request::is('admin/blog/create')) || Request::is('admin/blog/*') || Request::is('admin/blogcategory/*') ? 'class="active"' : '') !!}>
+    </li>
+    <li {!! ((Request::is('admin/blogcategory') || Request::is('admin/blogcategory/create') || Request::is('admin/blog') ||  Request::is('admin/blog/create')) || Request::is('admin/blog/*') || Request::is('admin/blogcategory/*') ? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="comment" data-c="#F89A14" data-hc="#F89A14" data-size="18"
                data-loop="true"></i>
@@ -624,7 +624,7 @@
                 </a>
             </li>
         </ul>
-    </li> -->
+    </li>
     <li {!! (Request::is('admin/news') || Request::is('admin/news_item')  ? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="move" data-c="#ef6f6c" data-hc="#ef6f6c" data-size="18"
@@ -639,6 +639,12 @@
                     News
                 </a>
             </li>
+            <li {!! (Request::is('admin/news/create') ? 'class="active"' : '') !!}>
+                <a href="{{ URL::to('admin/news/create') }}">
+                    <i class="fa fa-angle-double-right"></i>
+                    Add News
+                </a>
+            </li>
             <li {!! (Request::is('admin/news_item') ? 'class="active"' : '') !!}>
                 <a href="{{ URL::to('admin/news_item') }}">
                     <i class="fa fa-angle-double-right"></i>
@@ -649,7 +655,7 @@
     </li>
     <li {!! (Request::is('admin/books') || Request::is('admin/books/create') || Request::is('admin/books/*') || Request::is('admin/deleted_books') ? 'class="active"' : '') !!}>
         <a href="#">
-            <i class="livicon" data-name="book" data-size="18" data-c="#6CC66C" data-hc="#6CC66C"
+            <i class="fa fa-fw fa-book" data-name="book" data-size="18" data-c="#6CC66C" data-hc="#6CC66C"
                data-loop="true"></i>
             <span class="title">Books</span>
             <span class="fa arrow"></span>
@@ -681,7 +687,7 @@
             </li>
         </ul>
     </li>
-    <!-- <li {!! (Request::is('admin/invoice') || Request::is('admin/blank')  ? 'class="active"' : '') !!}>
+    <li {!! (Request::is('admin/invoice') || Request::is('admin/blank')  ? 'class="active"' : '') !!}>
         <a href="#">
             <i class="livicon" data-name="flag" data-c="#418bca" data-hc="#418bca" data-size="18"
                data-loop="true"></i>
@@ -744,7 +750,7 @@
                 </a>
             </li>
         </ul>
-    </li> -->
+    </li>
     <!-- Menus generated by CRUD generator -->
     @include('admin/layouts/menu')
 </ul>
