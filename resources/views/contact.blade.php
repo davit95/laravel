@@ -113,7 +113,7 @@ Contact
 {{-- page level scripts --}}
 @section('footer_scripts')
     <!-- page level js starts-->
-    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=true&key=AIzaSyBEQwPJ-DMl6KSw8Uto2g02emebocdKC3g"></script>
     <script type="text/javascript" src="{{ asset('assets/vendors/gmaps/js/gmaps.min.js') }}" ></script>
     <!--page level js ends-->
     <script>
