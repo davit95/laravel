@@ -23,7 +23,7 @@
     <hr>
     <div class="container">
         <div class="welcome">
-            <h3>My Account</h3>
+            <h3>Mon compte</h3>
         </div>
         <hr>
         <div class="row">
@@ -57,7 +57,7 @@
                                         <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
                                         <div>
                                                             <span class="btn btn-primary btn-file">
-                                                                <span class="fileinput-new">Select image</span>
+                                                                <span class="fileinput-new">Sélectionner l'image</span>
                                                                 <span class="fileinput-exists">Change</span>
                                                                 <input type="file" name="pic" id="pic" />
                                                             </span>
@@ -123,7 +123,7 @@
                             <div class="form-group {{ $errors->first('password', 'has-error') }}">
                                 <p class="text-warning col-md-offset-2"><strong>If you don't want to change password... please leave them empty</strong></p>
                                 <label class="col-lg-2 control-label">
-                                    Password:
+                                    Password :
                                     <span class='require'>*</span>
                                 </label>
                                 <div class="col-lg-6">
@@ -138,7 +138,7 @@
 
                             <div class="form-group {{ $errors->first('password_confirm', 'has-error') }}">
                                 <label class="col-lg-2 control-label">
-                                    Confirm Password:
+                                    Confirmez le mot de passe :
                                     <span class='require'>*</span>
                                 </label>
                                 <div class="col-lg-6">
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="col-lg-2 control-label">Gender: </label>
                                 <div class="col-lg-6">
                                     <div class="radio">
@@ -173,7 +173,7 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div>
                                 <h3 class="text-primary" id="title">Contact: </h3>
@@ -181,7 +181,7 @@
 
                             <div class="form-group {{ $errors->first('address', 'has-error') }}">
                                 <label class="col-lg-2 control-label">
-                                    Address:
+                                    Adresse :
                                 </label>
                                 <div class="col-lg-6">
                                             <textarea rows="5" cols="30" class="form-control resize_vertical" id="add1"
@@ -191,7 +191,7 @@
                             </div>
 
                             <div class="form-group {{ $errors->first('country', 'has-error') }}">
-                                <label class="control-label  col-md-2">Select Country: </label>
+                                <label class="control-label  col-md-2">Sélectionnez un pays : </label>
                                 <div class="col-md-6">
                                     {!! Form::select('country', $countries, $user->country,['class' => 'form-control select2', 'id' => 'countries']) !!}
                                     <span class="help-block">{{ $errors->first('country', ':message') }}</span>
@@ -199,7 +199,7 @@
                             </div>
 
                             <div class="form-group {{ $errors->first('state', 'has-error') }}">
-                                <label class="col-lg-2 control-label" for="state">State:</label>
+                                <label class="col-lg-2 control-label" for="state">Était :</label>
                                 <div class="col-lg-6">
                                     <div class="input-group">
                                                         <span class="input-group-addon">
@@ -227,7 +227,7 @@
                             </div>
 
                             <div class="form-group {{ $errors->first('postal', 'has-error') }}">
-                                <label class="col-lg-2 control-label" for="postal">Postal:</label>
+                                <label class="col-lg-2 control-label" for="postal">Code postal :</label>
                                 <div class="col-lg-6">
                                     <div class="input-group">
                                                         <span class="input-group-addon">
@@ -242,7 +242,7 @@
 
                             <div class="form-group {{ $errors->first('dob', 'has-error') }}">
                                 <label class="col-lg-2 control-label">
-                                    DOB:
+                                    Date de naissance :
                                 </label>
                                 <div class="col-lg-6">
                                     <div class="input-group">

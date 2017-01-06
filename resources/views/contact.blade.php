@@ -47,24 +47,24 @@ Contact
         <div class="row">
             <!-- Contact form Section Start -->
             <div class="col-md-6">
-                <h2>Contact Form</h2>
+                <h2>Formulaire de contact</h2>
                 <!-- Notifications -->
                 @include('notifications')
 
                 <form class="contact" id="contact" action="{{route('contact')}}" method="POST">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="form-group">
-                        <input type="text" name="contact-name" class="form-control input-lg" placeholder="Your name" required>
+                        <input type="text" name="contact-name" class="form-control input-lg" placeholder="Votre Nom et Prénom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="contact-email" class="form-control input-lg" placeholder="Your email address" required>
+                        <input type="email" name="contact-email" class="form-control input-lg" placeholder="Votre adresse email" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="contact-msg" class="form-control input-lg no-resize resize_vertical" rows="6" placeholder="Your comment" required></textarea>
+                        <textarea name="contact-msg" class="form-control input-lg no-resize resize_vertical" rows="6" placeholder="Votre commentaire" required></textarea>
                     </div>
                     <div class="input-group">
-                        <button class="btn btn-primary" type="submit">submit</button>
-                        <button class="btn btn-danger" type="reset">cancel</button>
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                        <button class="btn btn-danger" type="reset">Annuler</button>
                     </div>
                 </form>
             </div>
@@ -80,7 +80,7 @@ Contact
                         </a>
                     </div>
                     <div class="media-body">
-                        <h4 class="media-heading">Address:</h4>
+                        <h4 class="media-heading"> Adresse :</h4>
                         <div class="danger">Jyostna</div>
                         <address>
                             Pediatric Surgeons of Alaska
@@ -99,7 +99,7 @@ Contact
                         </a>
                     </div>
                     <div class="media-body padbtm2">
-                        <h4 class="media-heading">Telephone:</h4> (703) 717-4200
+                        <h4 class="media-heading">Téléphone :</h4> (703) 717-4200
                         <br /> Fax:400 423 1456
                     </div>
                 </div>
@@ -121,12 +121,12 @@ Contact
         $(document).ready(function() {
             var map = new GMaps({
                 el: '#map',
-                lat: 38.8921021,
-                lng: -77.0260358
+                lat: 48.8484556,
+                lng: 2.3432774
             });
             map.addMarker({
-                lat: 38.8921021,
-                lng: -77.0260358,
+                lat: 48.8484556,
+                lng: 2.3432774,
                 title: 'Washington'
             });
         });
