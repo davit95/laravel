@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-News_Item
+Abonnez-vous à notre lettre d’information
 @parent
 @stop
 
@@ -27,11 +27,11 @@ News_Item
                 </li>
                 <li class="hidden-xs">
                     <i class="livicon icon3" data-name="angle-double-right" data-size="18" data-loop="true" data-c="#01bc8c" data-hc="#01bc8c"></i>
-                    <a href="#">News Item</a>
+                    <a href="#"><!-- News Item -->Abonnez-vous à notre lettre d’information</a>
                 </li>
             </ol>
             <div class="pull-right">
-                <i class="livicon icon3" data-name="list-ul" data-size="20" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i> News Item
+                <i class="livicon icon3" data-name="list-ul" data-size="20" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i> <!-- News Item -->Abonnez-vous à notre lettre d’information
             </div>
         </div>
     </div>

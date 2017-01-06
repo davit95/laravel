@@ -56,8 +56,8 @@ Home
                     </div>
                     <div class="info">
                         <h3 class="success text-center">Responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
-                        <div class="text-right primary"><a href="#">Read more</a>
+                        <p>Sed id iaculis justo. Aliquam ac urna vel massa imperdiet pharetra vitae congue magna. Nulla sit amet tortor vel nisl dictum placerat. Nam tristique massa interdum porttitor imperdiet. Sed gravida eget libero quis bibendum. Cras vel erat a sem ultrices ultrices. Fusce fermentum vestibulum leo eu blandit.</p>
+                        <div class="text-right primary"><a href="#">Lire la suite</a>
                         </div>
                     </div>
                 </div>
@@ -71,8 +71,8 @@ Home
                     </div>
                     <div class="info">
                         <h3 class="primary text-center">Easy to Use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!.</p>
-                        <div class="text-right primary"><a href="#">Read more</a>
+                        <p>Nam placerat velit euismod lacus pellentesque tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sed dui justo. Aliquam semper turpis et ornare pulvinar. Sed sollicitudin erat ut metus commodo vehicula et vitae leo. Donec vel ante mauris. Quisque fringilla aliquet neque non gravida</p>
+                        <div class="text-right primary"><a href="#">Lire la suite</a>
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,8 @@ Home
                     </div>
                     <div class="info">
                         <h3 class="warning text-center">Clean Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
-                        <div class="text-right primary"><a href="#">Read more</a>
+                        <p>Nam placerat velit euismod lacus pellentesque tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sed dui justo. Aliquam semper turpis et ornare pulvinar. Sed sollicitudin erat ut metus commodo vehicula et vitae leo. Donec vel ante mauris. Quisque fringilla aliquet neque non gravida</p>
+                        <div class="text-right primary"><a href="#">Lire la suite</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ Home
                     <div class="info">
                         <h3 class="yellow text-center">20+ Pages</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta!</p>
-                        <div class="text-right primary"><a href="#">Read more</a>
+                        <div class="text-right primary"><a href="#">Lire la suite</a>
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@ Home
                             <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                 <span class=" glyphicon glyphicon-minus success"></span>
-                                <span class="success">Why Choose Us</span></a>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span></a>
                             </h4>
                         </div>
                         <!-- //Panel-heading End -->
@@ -254,7 +254,7 @@ Home
                             <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                 <span class=" glyphicon glyphicon-plus success"></span>
-                                <span class="success">Why Choose Us</span>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span>
                             </a>
                         </h4>
                         </div>
@@ -271,7 +271,7 @@ Home
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                                 <span class=" glyphicon glyphicon-plus success"></span>
-                                <span class="success">Why Choose Us</span></a>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span></a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
@@ -289,7 +289,7 @@ Home
         <!-- //Accordions Section End -->
         <!-- Our Team Start -->
         <div class="row text-center">
-            <h3 class=" border-danger"><a href="{{url('/team')}}"><span class="heading_border bg-danger">Our Team</span></a></h3>
+            <h3 class=" border-danger"><a href="{{url('/team')}}"><span class="heading_border bg-danger"><!-- Our Team -->Équipe</span></a></h3>
             <div class="col-md-3 col-sm-5 profile wow fadeInLeft" data-wow-duration="3s">
                 <div class="thumbnail bg-white">
                     <img src="{{ asset('assets/images/img_3.jpg') }}" alt="team-image" class="img-responsive">
@@ -378,15 +378,15 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInLeft" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-warning"><a href="{{url('/about-us')}}"><span class="heading_border bg-warning">What We Are</span></a></h4>
+                        <h4 class="border-warning"><a href="{{url('/about-us')}}"><span class="heading_border bg-warning"><!-- What We Are -->Ce que nous proposons</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_12.jpg') }}" alt="image_12" class="img-responsive">
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Nam placerat velit euismod lacus pellentesque tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sed dui justo. Aliquam semper turpis et ornare pulvinar. Sed sollicitudin erat ut metus commodo vehicula et vitae leo. Donec vel ante mauris. Quisque fringilla aliquet neque non gravida.
                 </p>
                 <p>
-                    <div class="text-right primary"><a href="#">Read more</a></div>
+                    <div class="text-right primary"><a href="#">Lire la suite</a></div>
                 </p>
             </div>
             <!-- //What we are End -->
@@ -394,15 +394,15 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInRight" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-success"><a href="{{url('/about-us')}}"><span class="heading_border bg-success">About Us</span></a></h4>
+                        <h4 class="border-success"><a href="{{url('/about-us')}}"><span class="heading_border bg-success"><!-- About Us -->À propos de nous</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_11.jpg') }}" alt="image_11" class="img-responsive">
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Nam placerat velit euismod lacus pellentesque tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sed dui justo. Aliquam semper turpis et ornare pulvinar. Sed sollicitudin erat ut metus commodo vehicula et vitae leo. Donec vel ante mauris. Quisque fringilla aliquet neque non gravida.
                 </p>
                 <p>
-                    <div class="text-right primary"><a href="#">Read more</a>
+                    <div class="text-right primary"><a href="#">Lire la suite</a>
                     </div>
                 </p>
             </div>
