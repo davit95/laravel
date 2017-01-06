@@ -33,7 +33,7 @@
                             <form action="{{ route('signin') }}" autocomplete="on" method="post" role="form" id="login_form">
                                 <h3 class="black_bg">
                                     <img src="{{ asset('assets/img/logo.png') }}" alt="josh logo">
-                                    <br>Log In</h3>
+                                    <br><!-- Log In -->Connexion</h3>
                                     <!-- CSRF Token -->
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group {{ $errors->first('email', 'has-error') }}">
@@ -48,9 +48,9 @@
                                 </div>
                                 <div class="form-group {{ $errors->first('password', 'has-error') }}">
                                     <label style="margin-bottom:0px;" for="password" class="youpasswd"> <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i>
-                                        Password
+                                        <!-- Password -->Mot de passe
                                     </label>
-                                    <input id="password" name="password" type="password" placeholder="Enter a password" />
+                                    <input id="password" name="password" type="password" placeholder="Mot de passe" />
                                     <div class="col-sm-12">
                                         {!! $errors->first('password', '<span class="help-block">:message</span>') !!}
                                     </div>
@@ -79,14 +79,14 @@
                             <form action="{{ route('signup') }}" autocomplete="on" method="post" role="form" id="register_here">
                                 <h3 class="black_bg">
                                     <img src="{{ asset('assets/img/logo.png') }}" alt="josh logo">
-                                    <br>Sign Up</h3>
+                                    <br><!-- Sign Up -->s'Inscrire</h3>
                                     <!-- CSRF Token -->
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
                                     <div class="form-group {{ $errors->first('first_name', 'has-error') }}">
                                         <label style="margin-bottom:0px;" for="first_name" class="youmail">
                                             <i class="livicon" data-name="user" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i>
-                                            First Name
+                                            <!-- First Name -->Prénom
                                         </label>
                                         <input id="first_name" name="first_name" required type="text" placeholder="John"
                                                value="{!! old('first_name') !!}"/>
@@ -98,7 +98,7 @@
                                     <div class="form-group {{ $errors->first('last_name', 'has-error') }}">
                                         <label style="margin-bottom:0px;" for="last_name" class="youmail">
                                             <i class="livicon" data-name="user" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i>
-                                            Last Name
+                                            <!-- Last Name -->Nom
                                         </label>
                                         <input id="last_name" name="last_name" required type="text" placeholder="Doe"
                                                value="{!! old('last_name') !!}"/>
@@ -145,9 +145,9 @@
                                     <div class="form-group {{ $errors->first('password_confirm', 'has-error') }}">
                                         <label style="margin-bottom:0px;" for="passwor_confirm" class="youpasswd">
                                             <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i>
-                                            Confirm Password
+                                            <!-- Confirm Password -->Confirmez le mot de passe
                                         </label>
-                                        <input id="password_confirm" name="password_confirm" required type="password" placeholder="Confirm Password" />
+                                        <input id="password_confirm" name="password_confirm" required type="password" placeholder="Confirmez le mot de passe" />
                                         <div class="col-sm-12">
                                             {!! $errors->first('password_confirm', '<span class="help-block">:message</span>') !!}
                                         </div>
