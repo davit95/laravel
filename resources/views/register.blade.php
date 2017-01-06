@@ -38,7 +38,7 @@
                 </div>
                 <div class="form-group {{ $errors->first('last_name', 'has-error') }}">
                     <label class="sr-only"> <!-- Last Name -->Nom</label>
-                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Nom"
+                    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="om"
                            value="{!! old('last_name') !!}" >
                     {!! $errors->first('last_name', '<span class="help-block">:message</span>') !!}
                 </div>
@@ -75,7 +75,11 @@
                     </label>
                 </div>
                 <button type="submit" class="btn btn-block btn-primary"><!-- Sign Up -->s'Inscrire</button>
+<<<<<<< HEAD
                <!--  Already have an account -->Vous avez un compte? <!-- Please --> <a href="{{ route('login') }}"> <!-- Log In -->Connexion</a>
+=======
+               <!--  Already have an account -->Si vous n'avez pas encore de compte? <!-- Please -->créez-en <a href="{{ route('login') }}"> <!-- Log In -->Connexion</a>
+>>>>>>> 0a8c4dcb15948c510a4fc1e5a2357ee39623fa81
             </form>
         </div>
     </div>

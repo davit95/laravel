@@ -36,7 +36,7 @@
                     </div>
                     <span class="help-block">{{ $errors->first('email', ':message') }}</span>
                     <div class="form-group {{ $errors->first('password', 'has-error') }}">
-                        <label class="sr-only">Password</label>
+                        <label class="sr-only"><!-- Password -->Mot de passe</label>
                         <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                     </div>
                     <span class="help-block">{{ $errors->first('password', ':message') }}</span>
