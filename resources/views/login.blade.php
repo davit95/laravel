@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login | Welcome to Josh Frontend</title>
+    <title>Connexion | Paleocoran</title>
     <!--global css starts-->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
@@ -22,8 +22,9 @@
     <div class="row">
         <div class="box animation flipInX">
             <div class="box1">
-            <img src="{{ asset('assets/images/josh-new.png') }}" alt="logo" class="img-responsive mar">
-            <h3 class="text-primary">Log In</h3>
+            <!-- <img src="{{ asset('assets/images/josh-new.png') }}" alt="logo" class="img-responsive mar"> -->
+            <img src="{{ asset('assets/images/logo.png') }}" alt="logo" class="img-responsive mar">
+            <h3 class="text-primary"><!-- Log In -->Connexion</h3>
                 <!-- Notifications -->
                 @include('notifications')
                 <form action="{{ route('login') }}" class="omb_loginForm"  autocomplete="off" method="POST">
@@ -35,22 +36,22 @@
                     </div>
                     <span class="help-block">{{ $errors->first('email', ':message') }}</span>
                     <div class="form-group {{ $errors->first('password', 'has-error') }}">
-                        <label class="sr-only">Password</label>
-                        <input type="password" class="form-control" name="password" placeholder="Password">
+                        <label class="sr-only"><!-- Password -->Mot de passe</label>
+                        <input type="password" class="form-control" name="password" placeholder="Mot de passe">
                     </div>
                     <span class="help-block">{{ $errors->first('password', ':message') }}</span>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Remember Password
+                            <input type="checkbox"> <!-- Remember Password -->Retenir le mot de passe
                         </label>
 
                     </div>
-                    <input type="submit" class="btn btn-block btn-primary" value="Log In">
-                    Don't have an account? <a href="{{ route('register') }}"><strong> Sign Up</strong></a>
+                    <input type="submit" class="btn btn-block btn-primary" value="Connexion"><!-- value Log In -->
+                    <!-- Don't have an account? -->Si vous n'avez pas encore de compte, créez-en un <a href="{{ route('register') }}"><strong> <!-- Sign Up -->s'Inscrire</strong></a>
                 </form>
             </div>
         <div class="bg-light animation flipInX">
-            <a href="{{ route('forgot-password') }}" id="forgot_pwd_title">Forgot Password?</a>
+            <a href="{{ route('forgot-password') }}" id="forgot_pwd_title"><!-- Forgot Password? -->Oublié votre mot de passe ?</a>
         </div>
         </div>
     </div>

@@ -80,6 +80,39 @@
                                 <span class="fileupload-preview"></span>
                                 <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
                             </div>
+
+                            <label>Files for slideshow 1</label>
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                <span class="btn btn-primary btn-file">
+                                    <span class="fileupload-new">@lang('news/form.select-file')</span>
+                                    <span class="fileupload-exists">@lang('news/form.change')</span>
+                                     {!! Form::file('image', null, array('class' => 'form-control')) !!}
+                                </span>
+                                <span class="fileupload-preview"></span>
+                                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                            </div>
+
+                            <label>Files for slideshow 2</label>
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                <span class="btn btn-primary btn-file">
+                                    <span class="fileupload-new">@lang('news/form.select-file')</span>
+                                    <span class="fileupload-exists">@lang('news/form.change')</span>
+                                     {!! Form::file('image', null, array('class' => 'form-control')) !!}
+                                </span>
+                                <span class="fileupload-preview"></span>
+                                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                            </div>
+
+                            <label>Files for slideshow 3</label>
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                <span class="btn btn-primary btn-file">
+                                    <span class="fileupload-new">@lang('news/form.select-file')</span>
+                                    <span class="fileupload-exists">@lang('news/form.change')</span>
+                                     {!! Form::file('image', null, array('class' => 'form-control')) !!}
+                                </span>
+                                <span class="fileupload-preview"></span>
+                                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+                            </div>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success">@lang('news/form.publish')</button>

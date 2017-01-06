@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-News
+Nos Actualités
 @parent
 @stop
 
@@ -27,11 +27,11 @@ News
                 </li>
                 <li class="hidden-xs">
                     <i class="livicon icon3" data-name="angle-double-right" data-size="18" data-loop="true" data-c="#01bc8c" data-hc="#01bc8c"></i>
-                    <a href="#">News</a>
+                    <a href="#"><!-- News -->Nos Actualités</a>
                 </li>
             </ol>
             <div class="pull-right">
-                <i class="livicon icon3" data-name="responsive-menu" data-size="20" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i> News
+                <i class="livicon icon3" data-name="responsive-menu" data-size="20" data-loop="true" data-c="#3d3d3d" data-hc="#3d3d3d"></i> <!-- News -->Nos Actualités
             </div>
         </div>
     </div>

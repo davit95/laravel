@@ -13,7 +13,7 @@
     <![endif]-->
     <title>
     	@section('title')
-        | Welcome to Josh Frontend
+        | Paleocoran
         @show
     </title>
     <!--global css starts-->
@@ -82,7 +82,7 @@
             </div>
             <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li {!! (Request::is('/') ? 'class="active"' : '') !!}><a href="{{ route('home') }}"> Home</a>
+                    <li {!! (Request::is('/') ? 'class="active"' : '') !!}><a href="{{ route('home') }}"> Paleocoran</a>
                     </li>
                     <!-- <li class="dropdown {!! (Request::is('typography') || Request::is('advancedfeatures') || Request::is('grid') ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Features</a>
                         <ul class="dropdown-menu" role="menu">
@@ -93,7 +93,7 @@
                             <li><a href="{{ URL::to('grid') }}">Grid System</a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li> 
                     <li class="dropdown {!! (Request::is('aboutus') || Request::is('timeline') || Request::is('faq') || Request::is('blank_page')  ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Pages</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ URL::to('aboutus') }}">About Us</a>
@@ -110,7 +110,7 @@
                             <li><a href="{{ URL::to('blank_page') }}">Blank</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <!-- <li class="dropdown {!! (Request::is('products') || Request::is('single_product') || Request::is('compareproducts') || Request::is('category')  ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Shop</a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ URL::to('products') }}">Products</a>
@@ -130,29 +130,29 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li class="dropdown {!! (Request::is('news') || Request::is('news_item') ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> News</a>
+                    <li class="dropdown {!! (Request::is('news') || Request::is('news_item') ? 'active' : '') !!}"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!-- News -->Nos Actualités</a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ URL::to('news') }}">News <!-- Nos Actualités --></a>
+                            <li><a href="{{ URL::to('news') }}"><!-- News --> Nos Actualités</a>
                             </li>
-                            <li><a href="{{ URL::to('news_item') }}">News Item</a>
+                            <li><a href="{{ URL::to('news_item') }}"><!-- News Item -->Abonnez-vous à notre lettre d’information</a>
                             </li>
                         </ul>
                     </li>
-                    <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('/team') }}">Team</a>
+                    <li {!! (Request::is('team') ? 'class="active"' : '') !!}><a href="{{ URL::to('/team') }}"><!-- Team -->Équipe</a>
                     </li>
                     <li {!! (Request::is('partners') ? 'class="active"' : '') !!}><a href="{{ URL::to('/partners') }}">Partners</a>
                     </li>
                     <!-- <li {!! (Request::is('blog') || Request::is('blogitem/*') ? 'class="active"' : '') !!}><a href="{{ URL::to('blog') }}"> Blog</a>
                     </li> -->
-                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}">About Us <!-- À propos de Palocoran --></a>
+                    <li {!! (Request::is('about-us') ? 'class="active"' : '') !!}><a href="{{ URL::to('/about-us') }}"><!-- About Us --> À propos de Palocoran</a>
                     </li>
                     <li {!! (Request::is('contact') ? 'class="active"' : '') !!}><a href="{{ URL::to('/contact') }}">Contact</a>
                     </li>
                     {{--based on anyone login or not display menu items--}}
                     @if(Sentinel::guest())
-                        <li><a href="{{ URL::to('login') }}">Login <!-- Compte --></a>
+                        <li><a href="{{ URL::to('login') }}"><!-- Login --> Connexion</a>
                         </li>
-                        <li><a href="{{ URL::to('register') }}">Register</a>
+                        <li><a href="{{ URL::to('register') }}"><!-- Register -->s'Inscrire</a>
                         </li>
                     @else
                         <li {{ (Request::is('my-account') ? 'class=active' : '') }}><a href="{{ URL::to('my-account') }}">My Account</a>
@@ -178,12 +178,12 @@
         <div class="container footer-text">
             <!-- About Us Section Start -->
             <div class="col-sm-6">
-                <h4>About Us</h4>
+                <h4><!-- About Us -->À propos de nous</h4>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
                 <hr id="hr_border2">
-                <h4 class="menu">Follow Us</h4>
+                <h4 class="menu"><!-- Follow Us -->Nous retrouver</h4>
                 <ul class="list-inline">
                     <li>
                         <a href="#"> <i class="livicon" data-name="facebook" data-size="18" data-loop="true" data-c="#ccc" data-hc="#ccc"></i>
@@ -225,11 +225,11 @@
                 </ul>
                 <hr id="hr_border">
                 <div class="news menu">
-                    <h4>News letter</h4>
+                    <h4><!-- News letter -->Abonnez-vous à notre lettre d’information</h4>
                     <p>subscribe to our newsletter and stay up to date with the latest news and deals</p>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="yourmail@mail.com" aria-describedby="basic-addon2">
-                        <a href="#" class="btn btn-primary text-white" role="button">Subscribe</a>
+                        <a href="#" class="btn btn-primary text-white" role="button"><!-- Subscribe -->Valider</a>
                     </div>
                 </div>
             </div>

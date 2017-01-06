@@ -235,7 +235,7 @@ Home
                             <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                 <span class=" glyphicon glyphicon-minus success"></span>
-                                <span class="success">Why Choose Us</span></a>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span></a>
                             </h4>
                         </div>
                         <!-- //Panel-heading End -->
@@ -254,7 +254,7 @@ Home
                             <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                 <span class=" glyphicon glyphicon-plus success"></span>
-                                <span class="success">Why Choose Us</span>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span>
                             </a>
                         </h4>
                         </div>
@@ -271,7 +271,7 @@ Home
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                                 <span class=" glyphicon glyphicon-plus success"></span>
-                                <span class="success">Why Choose Us</span></a>
+                                <span class="success"><!-- Why Choose Us -->Pourquoi choisir Paleocoran</span></a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
@@ -289,7 +289,7 @@ Home
         <!-- //Accordions Section End -->
         <!-- Our Team Start -->
         <div class="row text-center">
-            <h3 class=" border-danger"><a href="{{url('/team')}}"><span class="heading_border bg-danger">Our Team</span></a></h3>
+            <h3 class=" border-danger"><a href="{{url('/team')}}"><span class="heading_border bg-danger"><!-- Our Team -->Équipe</span></a></h3>
             <div class="col-md-3 col-sm-5 profile wow fadeInLeft" data-wow-duration="3s">
                 <div class="thumbnail bg-white">
                     <img src="{{ asset('assets/images/img_3.jpg') }}" alt="team-image" class="img-responsive">
@@ -378,7 +378,7 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInLeft" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-warning"><a href="{{url('/about-us')}}"><span class="heading_border bg-warning">What We Are</span></a></h4>
+                        <h4 class="border-warning"><a href="{{url('/about-us')}}"><span class="heading_border bg-warning"><!-- What We Are -->Ce que nous proposons</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_12.jpg') }}" alt="image_12" class="img-responsive">
@@ -394,7 +394,7 @@ Home
             <div class="col-md-6 col-sm-6 wow zoomInRight" data-wow-duration="3s">
                 <div class="text-left">
                     <div>
-                        <h4 class="border-success"><a href="{{url('/about-us')}}"><span class="heading_border bg-success">About Us</span></a></h4>
+                        <h4 class="border-success"><a href="{{url('/about-us')}}"><span class="heading_border bg-success"><!-- About Us -->À propos de nous</span></a></h4>
                     </div>
                 </div>
                 <img src="{{ asset('assets/images/image_11.jpg') }}" alt="image_11" class="img-responsive">
